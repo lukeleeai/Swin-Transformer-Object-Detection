@@ -18,7 +18,7 @@ model = dict(
         # ape=False,
         drop_path_rate=0.2,
         patch_norm=True,
-        use_checkpoint=False
+        with_cp=False
     ),
     neck=dict(in_channels=[96, 192, 384, 768]),
     roi_head=dict(
